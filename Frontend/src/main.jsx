@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { ThemeProvider, createTheme } from '@mui/material'
-import {} from '@mui/x-data-grid/themeAugmentation';
+// import {} from '@mui/x-data-grid/themeAugmentation';
 const theme = createTheme({
     components: {
         MuiDataGrid: {
@@ -23,7 +23,7 @@ const theme = createTheme({
     });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}> 
         <App />
     </ThemeProvider>
 
